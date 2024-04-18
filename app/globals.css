@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 2.5s ease-out; /* Puedes ajustar la duración y el tipo de animación según tus preferencias */
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .bg-gradient-animation {
+    animation: gradientAnimation 10s ease infinite; /* Ajusta la duración según lo desees */
+    background: linear-gradient(to right, #000000, #530000, #a32100, #a7371b, #a32100, #530000, #000000); /* Define los colores del gradiente */
+    background-size: 150% 150%; /* Ajusta el tamaño del gradiente */
+  }
+  
+  .Card {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #3333;
+    background-color: #343a46;
+    padding: 10px;
+    text-align: center;
+    /* border: 2px solid #444; */
+  }
+
+  .VehicleView {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .VehicleView img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .App h1 {
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+
+  .btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+  }
+
+  .btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #099404;
+  }
+
+
+  .rounded-title {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.842); /* Cambia aquí el color de fondo deseado */
+    color: rgb(95, 95, 95); /* Color del texto en negro */
+    padding: 0.5rem 1rem; /* Ajusta el relleno según sea necesario */
+    border-radius: 999px; /* Valor grande para un borde redondeado */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave para el color de fondo y el color del texto */
+  }
+  
+  .rounded-title:hover {
+    color: white; /* Cambia el color del texto al hacer hover */
+    background-color: gray; /* Cambia el color de fondo al hacer hover */
+  }
+  @layer utilities {
+    .shadow-text-glow {
+      text-shadow: 0 0 20px rgba(29, 11, 0, 0.8); /* Cambia los valores según sea necesario */
+    }
+  }
