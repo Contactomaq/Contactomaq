@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Description from "./Description";
 import { images } from "./Constants";
+import Image from "next/image";
 
 
 
@@ -43,7 +44,8 @@ const Slider = () => {
                 : "hidden"
             }`}
           >
-            <img src={elem.src} alt={elem.title} className="w-full h-full object-cover md:rounded-tl-3xl md:rounded-bl-3xl" />
+            <Image src={elem.src} alt={elem.title} width={300} height={200} className="w-full h-full object-cover md:rounded-tl-3xl md:rounded-bl-3xl" />
+
           </div>
         ))}
       </div>

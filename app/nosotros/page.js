@@ -1,16 +1,17 @@
 "use client"
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Accordion from "../components/Acordion";
 import Opiniones from "../components/Opiniones";
 
 const About = () => {
   const [paragraph, setParagraph] = useState("Este es un párrafo de ejemplo");
-  const paragraphs = [
+  const [index, setIndex] = useState(0);
+
+  const paragraphs = useMemo(() => [
     "Este es un párrafo de ejemplo",
     "Este es otro párrafo",
     "Y aquí hay un tercer párrafo"
-  ];
-  const [index, setIndex] = useState(0);
+  ], []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -18,11 +19,11 @@ const About = () => {
     }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [index, paragraphs.length]); // Agregamos paragraphs.length al array de dependencias
 
   useEffect(() => {
     setParagraph(paragraphs[index]);
-  }, [index]);
+  }, [index, paragraphs]); // Agregamos index y paragraphs al array de dependencias
 
   return (
     <>
@@ -42,22 +43,17 @@ const About = () => {
                 {paragraph}
               </p>
             </div>
-            
           </div>
         </div>
       </div>
       <br />
-
       <h3 className="text-center">Preguntas frecuentes</h3>
-
       <div className="container mx-auto px-4">
         <Accordion />
       </div>
       <br />
       <h3 className="text-center">Opiniones</h3>
-     
-          <Opiniones/>
-      
+      <Opiniones />
     </>
   );
 };

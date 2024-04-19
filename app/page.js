@@ -1,13 +1,17 @@
 import React from "react";
 import "./globals.css";
 import WhatsappIcon from "./components/WhatsappIcon";
+import Image from "next/image";
 
 
 export default function Home  ()  {
   return (
 
+    
+
 
 <>
+<div><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/></div>
 
 <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/motosierra.png')" }}>
   <div className="absolute inset-0 bg-black opacity-50"></div> {/* Fondo oscuro */}
@@ -50,7 +54,7 @@ export default function Home  ()  {
       <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
         <div className="group relative">
           <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-            <img src="/Resortes.png" alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." className="h-full w-full object-cover object-center" />
+            <Image src="/Resortes.png" fill alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." className="h-full w-full object-cover object-center" />
           </div>
           <h3 className="mt-6 text-sm text-gray-500">
             <a href="#">
@@ -62,7 +66,7 @@ export default function Home  ()  {
         </div>
         <div className="group relative">
           <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-            <img src="/Tapa.png" alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant." className="h-full w-full object-cover object-center" />
+            <Image src="/Tapa.png"  fill alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant." className="h-full w-full object-cover object-center" />
           </div>
           <h3 className="mt-6 text-sm text-gray-500">
             <a href="#">
@@ -74,7 +78,7 @@ export default function Home  ()  {
         </div>
         <div className="group relative">
           <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-            <img src="/Polea.png" alt="Collection of four insulated travel bottles on wooden shelf." className="h-full w-full object-cover object-center" />
+            <Image src="/Polea.png" fill alt="Collection of four insulated travel bottles on wooden shelf." className="h-full w-full object-cover object-center" />
           </div>
           <h3 className="mt-6 text-sm text-gray-500">
             <a href="/">
@@ -124,7 +128,7 @@ export default function Home  ()  {
     <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
     <div className="group relative bg-white rounded-md overflow-hidden shadow-md hover:shadow-lg transition duration-300">
   <div className="aspect-w-16 aspect-h-9">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc6paEXZpubi-S6dlBQMGujCStbQ53_VZWZESkKF37Bw&s" alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
+    <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc6paEXZpubi-S6dlBQMGujCStbQ53_VZWZESkKF37Bw&s" width={150} height={150} alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
   </div>
   <div className="p-4">
     <h3 className="text-lg font-semibold text-gray-800">Basic Tee</h3>
@@ -142,7 +146,7 @@ export default function Home  ()  {
 
 <div className="group relative bg-white rounded-md overflow-hidden shadow-md hover:shadow-lg transition duration-300">
   <div className="aspect-w-16 aspect-h-9">
-    <img src="petri.png" alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
+    <Image src="/petri.png" width={150} height={150}  alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
   </div>
   <div className="p-4">
     <h3 className="text-lg font-semibold text-gray-800">Basic Tee</h3>
@@ -161,7 +165,7 @@ export default function Home  ()  {
 
 <div className="group relative bg-white rounded-md overflow-hidden shadow-md hover:shadow-lg transition duration-300">
   <div className="aspect-w-16 aspect-h-9">
-    <img src="lusqtoff.png" alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
+    <Image src="/lusqtoff.png" width={150} height={150} alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
   </div>
   <div className="p-4">
     <h3 className="text-lg font-semibold text-gray-800">Basic Tee</h3>
@@ -176,7 +180,7 @@ export default function Home  ()  {
 
 <div className="group relative bg-white rounded-md overflow-hidden shadow-md hover:shadow-lg transition duration-300">
   <div className="aspect-w-16 aspect-h-9">
-    <img src="sthils.png" alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
+    <Image src="/sthils.png" width={150} height={150} alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
   </div>
   <div className="p-4">
     <h3 className="text-lg font-semibold text-gray-800">Basic Tee</h3>
@@ -237,10 +241,10 @@ Auto cut 25-2.
           </dl>
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-          <img src="/Autocut1.png" alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." className="rounded-lg bg-gray-100"/>
-          <img src="Autocut2.png" alt="Top down view of walnut card tray with embedded magnets and card groove." className="rounded-lg bg-gray-100"/>
-          <img src="Autocut3.png" alt="Side of walnut card tray with card groove and recessed card area." className="rounded-lg bg-gray-100"/>
-          <img src="Autocut4.png" alt="Walnut card tray filled with cards and card angled in dedicated groove." className="rounded-lg bg-gray-100"/>
+          <Image src="/Autocut1.png" width={350} height={350} alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." className="rounded-lg bg-gray-100"/>
+          <Image src="/Autocut2.png" width={350} height={350} alt="Top down view of walnut card tray with embedded magnets and card groove." className="rounded-lg bg-gray-100"/>
+          <Image src="/Autocut3.png" width={350} height={350} alt="Side of walnut card tray with card groove and recessed card area." className="rounded-lg bg-gray-100"/>
+          <Image src="/Autocut4.png" width={350} height={350} alt="Walnut card tray filled with cards and card angled in dedicated groove." className="rounded-lg bg-gray-100"/>
         </div>
       </div>
     </div>
@@ -270,17 +274,3 @@ Auto cut 25-2.
     );
   
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-

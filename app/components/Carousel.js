@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-
+import Image from 'next/image';
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const totalSlides = 5; // Ajusta esto al número total de slides que tengas
@@ -42,11 +42,14 @@ const Carousel = () => {
                         className={`${index === currentSlide ? 'block' : 'hidden'} duration-700 ease-in-out`}
                         data-carousel-item
                     >
-                        <img
-                            src={image}
-                            className="absolute inset-0 w-full h-full object-cover"
-                            alt={`Slide ${index + 1}`}
-                        />
+                       <Image
+    src={image}
+    className="absolute inset-0 w-full h-full object-cover"
+    alt={`Slide ${index + 1}`}
+    layout="fill"
+    objectFit="cover"
+/>
+
                     </div>
                 ))}
             </div>
