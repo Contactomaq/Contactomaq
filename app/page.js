@@ -18,9 +18,10 @@ export default function Home  ()  {
   <div className="absolute inset-0 bg-black opacity-50"></div> {/* Fondo oscuro */}
   <div className="max-w-4xl mx-auto text-center relative z-10" style={{ top: "50%", transform: "translateY(-60%)" }}> {/* Ajuste de posición vertical */}
     <div className="bg-white rounded-full p-4 shadow-lg">
-      <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-800 dark:text-white">
-        Contactomaq
-      </h1>
+    <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-gray-800 dark:text-white">
+  Contactomaq
+</h1>
+
     </div>
 
     <div className="mt-6 md:mt-10"> {/* Ajuste de margen superior */}
@@ -131,7 +132,7 @@ export default function Home  ()  {
     <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc6paEXZpubi-S6dlBQMGujCStbQ53_VZWZESkKF37Bw&s" width={150} height={150} alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
   </div>
   <div className="p-4">
-    <h3 className="text-lg font-semibold text-gray-800">Generador</h3>
+    <h3 className="text-lg font-semibold text-gray-800">Generadores</h3>
     <p className="mt-1 text-sm text-gray-600">Modelo: Shimaha</p>
     <div className="flex items-center justify-between mt-2">
       <p className="text-sm font-medium text-gray-900">Consultá tu Promo!</p>
@@ -168,7 +169,7 @@ export default function Home  ()  {
     <Image src="/lusqtoff.png" width={150} height={150} alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
   </div>
   <div className="p-4">
-    <h3 className="text-lg font-semibold text-gray-800">Desmalezadora</h3>
+    <h3 className="text-lg font-semibold text-gray-800">Desmalezadoras</h3>
     <p className="mt-1 text-sm text-gray-600">Modelo: Lusqtoff</p>
     <div className="flex items-center justify-between mt-2">
       <p className="text-sm font-medium text-gray-900">Consultá tu Promo!</p>
@@ -183,7 +184,7 @@ export default function Home  ()  {
     <Image src="/sthils.png" width={150} height={150} alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
   </div>
   <div className="p-4">
-    <h3 className="text-lg font-semibold text-gray-800">Motosierra</h3>
+    <h3 className="text-lg font-semibold text-gray-800">Motosierras</h3>
     <p className="mt-1 text-sm text-gray-600">Modelo: Sthil</p>
     <div className="flex items-center justify-between mt-2">
       <p className="text-sm font-medium text-gray-900">Consultá tu Promo</p>
