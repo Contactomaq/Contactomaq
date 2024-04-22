@@ -4,6 +4,7 @@ import WhatsappIcon from "./components/WhatsappIcon";
 import Image from "next/image";
 
 
+
 export default function Home  ()  {
   return (
 
@@ -259,11 +260,11 @@ Auto cut 25-2.
 <div className="mx-auto max-w-7xl px-6 lg:px-8">
 <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">Algunas de las marcas con las que trabajamos</h2>
 <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-<img className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://logowik.com/content/uploads/images/8133-stihl.jpg" alt="Transistor" width="158" height="48" />
-<img className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://findlogovector.com/wp-content/uploads/2018/08/husqvarna-logo-vector.png" alt="Reform" width="158" height="48" />
-<img className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://findvectorlogo.com/wp-content/uploads/2018/08/briggs-stratton-vector-logo.png" alt="Tuple" width="158" height="48" />
-<img className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://http2.mlstatic.com/D_NQ_NP_810163-MLA25817120547_072017-O.webp" alt="SavvyCal" width="158" height="48" />
-<img className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://www.molamaq.com/todohusqvarna/uploads/brands/niwa.png" alt="Statamic" width="158" height="48" />
+<Image  width={100} height={100} src="/sthil1.png" alt="Transistor"  />
+<Image src="/husqvarna1.png" alt="Reform" width={100} height={100} />
+<Image width={100} height={100} src="/brigs1.png" alt="brigs"/>
+<Image src="https://http2.mlstatic.com/D_NQ_NP_810163-MLA25817120547_072017-O.webp" width={100} height={100} alt="SavvyCal" />
+<Image  src="https://www.molamaq.com/todohusqvarna/uploads/brands/niwa.png" alt="Statamic" width={100} height={100} />
 </div>
 </div>
 </div>
