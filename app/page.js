@@ -20,7 +20,6 @@ export default function Home  ()  {
     <div className="bg-white rounded-full p-4 shadow-lg">
       <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-800 dark:text-white">
         Contactomaq
-        <small className="ms-2 font-semibold text-gray-600 dark:text-gray-400">Bienvenidos!</small>
       </h1>
     </div>
 
@@ -50,7 +49,7 @@ export default function Home  ()  {
 <div className="bg-gray-300">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-      <h2 className="text-2xl font-bold text-gray-900">Collections</h2>
+      <h2 className="text-2xl font-bold text-gray-900">De arranque</h2>
 
       <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
         <div className="group relative">
@@ -60,10 +59,10 @@ export default function Home  ()  {
           <h3 className="mt-6 text-sm text-gray-500">
             <a href="#">
               <span className="absolute inset-0"></span>
-              Desk and Office
+              Resortes de arranque
             </a>
           </h3>
-          <p className="text-base font-semibold text-gray-900">Work from home accessories</p>
+          <p className="text-base font-semibold text-gray-900">Para motosierras y desmalezadoras</p>
         </div>
         <div className="group relative">
           <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
@@ -72,10 +71,10 @@ export default function Home  ()  {
           <h3 className="mt-6 text-sm text-gray-500">
             <a href="#">
               <span className="absolute inset-0"></span>
-              Self-Improvement
+              Tapas de arranque completas
             </a>
           </h3>
-          <p className="text-base font-semibold text-gray-900">Journals and note-taking</p>
+          <p className="text-base font-semibold text-gray-900">Tipo black & Decker entre otros</p>
         </div>
         <div className="group relative">
           <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
@@ -84,10 +83,10 @@ export default function Home  ()  {
           <h3 className="mt-6 text-sm text-gray-500">
             <a href="/">
               <span className="absolute inset-0"></span>
-              Travel
+            Poleas
             </a>
           </h3>
-          <p className="text-base font-semibold text-gray-900">Daily commute essentials</p>
+          <p className="text-base font-semibold text-gray-900">Poleas para tapa de arranque</p>
         </div>
       </div>
     </div>
@@ -124,7 +123,7 @@ export default function Home  ()  {
 
 <div className="bg-gradient-to-r from-red-600 to-orange-300">
   <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-    <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
+    <h2 className="text-2xl font-bold tracking-tight text-gray-900">De motores grandes</h2>
 
     <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
     <div className="group relative bg-white rounded-md overflow-hidden shadow-md hover:shadow-lg transition duration-300">
@@ -132,11 +131,11 @@ export default function Home  ()  {
     <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc6paEXZpubi-S6dlBQMGujCStbQ53_VZWZESkKF37Bw&s" width={150} height={150} alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
   </div>
   <div className="p-4">
-    <h3 className="text-lg font-semibold text-gray-800">Basic Tee</h3>
-    <p className="mt-1 text-sm text-gray-600">Color: Black</p>
+    <h3 className="text-lg font-semibold text-gray-800">Generador</h3>
+    <p className="mt-1 text-sm text-gray-600">Modelo: Shimaha</p>
     <div className="flex items-center justify-between mt-2">
-      <p className="text-sm font-medium text-gray-900">$35</p>
-      <button className="px-3 py-1 text-sm text-white bg-gray-900 hover:bg-gray-800 rounded-md">Add to Cart</button>
+      <p className="text-sm font-medium text-gray-900">Consultá tu Promo!</p>
+      <button className="px-3 py-1 text-sm text-white bg-gray-900 hover:bg-gray-800 rounded-md">Ver detalles</button>
     </div>
   </div>
 </div>
@@ -150,11 +149,11 @@ export default function Home  ()  {
     <Image src="/petri.png" width={150} height={150}  alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
   </div>
   <div className="p-4">
-    <h3 className="text-lg font-semibold text-gray-800">Basic Tee</h3>
-    <p className="mt-1 text-sm text-gray-600">Color: Black</p>
+    <h3 className="text-lg font-semibold text-gray-800">Bordedoras</h3>
+    <p className="mt-1 text-sm text-gray-600">Modelo: Petri</p>
     <div className="flex items-center justify-between mt-2">
-      <p className="text-sm font-medium text-gray-900">$35</p>
-      <button className="px-3 py-1 text-sm text-white bg-gray-900 hover:bg-gray-800 rounded-md">Add to Cart</button>
+      <p className="text-sm font-medium text-gray-900">Consultá tu Promo!</p>
+      <button className="px-3 py-1 text-sm text-white bg-gray-900 hover:bg-gray-800 rounded-md">Ver detalles</button>
     </div>
   </div>
 </div>
@@ -169,11 +168,11 @@ export default function Home  ()  {
     <Image src="/lusqtoff.png" width={150} height={150} alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
   </div>
   <div className="p-4">
-    <h3 className="text-lg font-semibold text-gray-800">Basic Tee</h3>
-    <p className="mt-1 text-sm text-gray-600">Color: Black</p>
+    <h3 className="text-lg font-semibold text-gray-800">Desmalezadora</h3>
+    <p className="mt-1 text-sm text-gray-600">Modelo: Lusqtoff</p>
     <div className="flex items-center justify-between mt-2">
-      <p className="text-sm font-medium text-gray-900">$35</p>
-      <button className="px-3 py-1 text-sm text-white bg-gray-900 hover:bg-gray-800 rounded-md">Add to Cart</button>
+      <p className="text-sm font-medium text-gray-900">Consultá tu Promo!</p>
+      <button className="px-3 py-1 text-sm text-white bg-gray-900 hover:bg-gray-800 rounded-md">Ver detalles</button>
     </div>
   </div>
 </div>
@@ -184,11 +183,11 @@ export default function Home  ()  {
     <Image src="/sthils.png" width={150} height={150} alt="Front of men's Basic Tee in black." className="object-cover w-full h-full" />
   </div>
   <div className="p-4">
-    <h3 className="text-lg font-semibold text-gray-800">Basic Tee</h3>
-    <p className="mt-1 text-sm text-gray-600">Color: Black</p>
+    <h3 className="text-lg font-semibold text-gray-800">Motosierra</h3>
+    <p className="mt-1 text-sm text-gray-600">Modelo: Sthil</p>
     <div className="flex items-center justify-between mt-2">
-      <p className="text-sm font-medium text-gray-900">$35</p>
-      <button className="px-3 py-1 text-sm text-white bg-gray-900 hover:bg-gray-800 rounded-md">Add to Cart</button>
+      <p className="text-sm font-medium text-gray-900">Consultá tu Promo</p>
+      <button className="px-3 py-1 text-sm text-white bg-gray-900 hover:bg-gray-800 rounded-md">Ver detalles</button>
     </div>
   </div>
 </div>
