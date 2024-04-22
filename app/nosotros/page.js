@@ -31,9 +31,10 @@ const About = () => {
         <div className="container mx-auto px-4 py-8 sm:py-16">
           <div className="flex flex-col items-center justify-center space-y-8">
             <div className="bg-black rounded-full p-4 shadow-lg">
-              <h2 className="text-5xl font-extrabold text-white dark:text-white md-text-center">
-                Sobre Nosotros
-              </h2>
+            <h1 className="text-3xl md:text-5xl font-extrabold text-white dark:text-white text-center md:text-left">
+  Sobre Nosotros
+</h1>
+
             </div>
             <div className="">
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white leading-relaxed mb-8">

@@ -5,8 +5,8 @@ import Image from "next/image";
 const Description = ({ activeImage, clickNext, clickPrev, images }) => {
   return (
     <div className="grid place-items-start w-full bg-[#e7dfd9] relative md:rounded-tr-3xl md:rounded-br-3xl">
-    <div className="uppercase text-sm absolute right-4 top-2 underline-offset-4 underline" style={{backgroundColor: 'black', color: 'white', borderRadius: '10px', padding: '5px 10px'}}>
-    SOMOS CONTACTOMAQ
+    <div className="uppercase text-sm absolute right-4 top-2 underline-offset-4 underline" style={{backgroundColor: 'black', color: 'white', borderRadius: '10px', padding: '10px 10px'}}>
+    productos
 </div>
 
 

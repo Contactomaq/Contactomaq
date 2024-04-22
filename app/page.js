@@ -19,7 +19,7 @@ export default function Home  ()  {
   <div className="max-w-4xl mx-auto text-center relative z-10" style={{ top: "50%", transform: "translateY(-60%)" }}> {/* Ajuste de posición vertical */}
     <div className="bg-black rounded-full p-4">
     <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold bg-black text-white">
-  Contactomaq
+  Servicio Técnico
 </h1>
 
 
@@ -27,7 +27,7 @@ export default function Home  ()  {
 
     <div className="mt-6 md:mt-10"> {/* Ajuste de margen superior */}
       <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-yellow-500 mb-4 md:mb-8 shadow-text-glow">
-        Servicio Técnico Oficial
+        Tecnico Oficial
         Venta, repuestos e insumos para motoimplementos de bosque y jardín!
       </h2>
     </div>

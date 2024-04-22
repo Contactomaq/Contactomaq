@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "../components/Slider";
 import Listado from "../listado/page";
-import WhatsappIcon from "../components/WhatsappIcon";
+
 import Image from "next/image";
 const Services = () => {
  

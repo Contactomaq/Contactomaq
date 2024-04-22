@@ -83,10 +83,10 @@ const toggleNavbar = () => {
 {isClick && (
     <div className="md:hidden">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <Link href="/" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">HOME</Link>
-        <Link href="/nosotros" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">ABOUT</Link>
-        <Link href="/services" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">SERVICES</Link>
-        <Link href="/contacto" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">CONTACTO</Link> 
+        <Link href="/" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">Inicio</Link>
+        <Link href="/nosotros" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">Nosotros</Link>
+        <Link href="/services" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">Productos</Link>
+        <Link href="/contacto" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">Contacto</Link> 
              </div>
     </div>
 )}
