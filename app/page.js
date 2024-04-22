@@ -17,7 +17,7 @@ export default function Home  ()  {
 <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/motosierra.png')" }}>
   <div className="absolute inset-0 bg-black opacity-50"></div> {/* Fondo oscuro */}
   <div className="max-w-4xl mx-auto text-center relative z-10" style={{ top: "50%", transform: "translateY(-60%)" }}> {/* Ajuste de posición vertical */}
-    <div className="bg-white rounded-full p-4">
+    <div className="bg-black rounded-full p-4">
     <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold bg-black text-white">
   Contactomaq
 </h1>

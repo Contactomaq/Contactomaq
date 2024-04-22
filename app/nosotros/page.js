@@ -30,9 +30,9 @@ const About = () => {
       <div className="bg-gradient-animation">
         <div className="container mx-auto px-4 py-8 sm:py-16">
           <div className="flex flex-col items-center justify-center space-y-8">
-            <div className="bg-white rounded-full p-4 shadow-lg">
-              <h2 className="text-5xl font-extrabold text-gray-800 dark:text-white md-text-center">
-                Nosotros
+            <div className="bg-black rounded-full p-4 shadow-lg">
+              <h2 className="text-5xl font-extrabold text-white dark:text-white md-text-center">
+                Sobre Nosotros
               </h2>
             </div>
             <div className="">
