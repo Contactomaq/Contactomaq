@@ -4,7 +4,7 @@ import Card from "../components/Card";
 function Listado() {
   const vehicleList = vehicles.map((v, index) => {
     // Agregar un atributo "key" único usando el índice del mapeo
-    return <Card key={index} title={v.name} description={v.description} />;
+    return <Card key={index} title={v.name} description={v.description} index={index} />;
   });
 
   return (

@@ -1,3 +1,5 @@
+
+
 const vehicles = [
     {
       name: "DESMALEZADORAS",
@@ -28,7 +30,7 @@ const vehicles = [
       name: "CESPERAS",
       description: "Repuestos, accesorios y marcas de cesperas.",
     
-      id: 5,
+      id: 5
     },
     {
       name: "GENERADORES",

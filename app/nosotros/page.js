@@ -4,19 +4,19 @@ import Accordion from "../components/Acordion";
 import Opiniones from "../components/Opiniones";
 
 const About = () => {
-  const [paragraph, setParagraph] = useState("Este es un párrafo de ejemplo");
+  const [paragraph, setParagraph] = useState("SOMOS CONTACTO");
   const [index, setIndex] = useState(0);
 
   const paragraphs = useMemo(() => [
-    "Este es un párrafo de ejemplo",
-    "Este es otro párrafo",
-    "Y aquí hay un tercer párrafo"
+    "Horarios de atención de lunes a viernes de 09:00 Hs a 18:00 Hs",
+    "Contamos con varios metodos de pago",
+    "Donde? En José Manuel Estrada 1723, B1742 Paso del Rey, Provincia de Buenos Aires"
   ], []);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % paragraphs.length);
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [index, paragraphs.length]); // Agregamos paragraphs.length al array de dependencias
@@ -45,7 +45,9 @@ const About = () => {
         </div>
       </div>
       <br />
-      <h3 className="text-center">Preguntas frecuentes</h3>
+      <div className="bg-black rounded-full p-4 shadow-lg">
+      <h3 className="text-3xl md:text-5xl font-extrabold text-white dark:text-white text-center md:text-left">Preguntas frecuentes</h3>
+      </div>
       <div className="container mx-auto px-4">
         <Accordion />
       </div>

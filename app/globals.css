@@ -89,20 +89,22 @@
     background: #099404;
   }
 
-
   .rounded-title {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.842); /* Cambia aquí el color de fondo deseado */
-    color: rgb(95, 95, 95); /* Color del texto en negro */
+    background-color: rgba(206, 169, 4, 0.856); /* Cambia aquí el color de fondo deseado */
+    color: rgb(53, 45, 0); /* Color del texto en negro */
     padding: 0.5rem 1rem; /* Ajusta el relleno según sea necesario */
     border-radius: 999px; /* Valor grande para un borde redondeado */
     transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave para el color de fondo y el color del texto */
+    font-family: Arial, sans-serif; /* Cambia la fuente aquí */
+    font-size: 16px; /* Tamaño de fuente ajustable */
   }
   
   .rounded-title:hover {
-    color: white; /* Cambia el color del texto al hacer hover */
-    background-color: gray; /* Cambia el color de fondo al hacer hover */
+    color: rgba(0, 0, 0, 0.897); /* Cambia el color del texto al hacer hover */
+    background-color: rgba(255, 217, 0, 0.863); /* Cambia el color de fondo al hacer hover */
   }
+  
   @layer utilities {
     .shadow-text-glow {
       text-shadow: 0 0 20px rgba(29, 11, 0, 0.8); /* Cambia los valores según sea necesario */

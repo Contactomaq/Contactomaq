@@ -13,22 +13,23 @@ const Accordion = () => {
       <div className="border border-gray-200 rounded-lg overflow-hidden">
         <AccordionItem
           index={1}
-          question="What is Flowbite?"
-          answer="Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more."
+          question="Quiero arreglar mi maquina, cuando la debo llevar y cuanto debo pagar y esperar?"
+          answer="Primero le tomamos un turno, se lo asignamos, luego cuando entra en banco su maquina, es decir a repararse, primero se presupuesta y luego de aceptar dicho presupuesto y dias estimados, comenzamos con el proceso."
           activeAccordion={activeAccordion}
           toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           index={2}
-          question="Is there a Figma file available?"
-          answer="Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file."
+          question="Quiero comprar una maquina y o repuestos, cuentan con tarjetas de debito, credito y mercado pago?"
+          answer="Si! Contamos con metodos de pagos, tano como debito, credito y mercado pago. Y efectivo!"
           activeAccordion={activeAccordion}
           toggleAccordion={toggleAccordion}
         />
         <AccordionItem
           index={3}
-          question="What are the differences between Flowbite and Tailwind UI?"
-          answer="The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product."
+          question="Hay descuentos, bonificaciones? Hacen envíos de productos?"
+          answer="Hay descuentos y bonificaciones comprando por cantidad y productos especificos, Consultar.
+          Además hacemos envios tanto en Buenos Aires, como al interiór, todo el país con Mercado Libre (Visitá nuestra tienda.)"
           activeAccordion={activeAccordion}
           toggleAccordion={toggleAccordion}
         />

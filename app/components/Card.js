@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link';
 
-const Card = ({ title = "titulo por defecto", description = "descripcion por defecto" }) => {
+const Card = ({ title = "titulo por defecto", description = "descripcion por defecto", index }) => {
   return (
     <div className="Card" style={{ 
       boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)', 
@@ -14,7 +14,7 @@ const Card = ({ title = "titulo por defecto", description = "descripcion por def
     onMouseOut={(e) => { e.currentTarget.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.3)' }} // Restaurar sombra original al quitar el cursor
     >
       <h2 className="text-xl font-bold mb-2">
-        <Link href={title} className="text-red-600 hover:underline rounded-title">
+        <Link href={`/vehicle/${index}`} className="text-red-600 hover:underline rounded-title">
           {title}
         </Link>
       </h2>
