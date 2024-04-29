@@ -20,8 +20,8 @@ const Accordion = () => {
         />
         <AccordionItem
           index={2}
-          question="Quiero comprar una maquina y o repuestos, cuentan con tarjetas de debito, credito y mercado pago?"
-          answer="Si! Contamos con metodos de pagos, tano como debito, credito y mercado pago. Y efectivo!"
+          question="Quiero comprar una maquina y o repuestos, cuentan con tarjetas de debito, credito, mercado pago?"
+          answer="Si! Contamos con metodos de pagos, tanto como debito, credito y mercado pago. Y efectivo!"
           activeAccordion={activeAccordion}
           toggleAccordion={toggleAccordion}
         />
@@ -29,7 +29,7 @@ const Accordion = () => {
           index={3}
           question="Hay descuentos, bonificaciones? Hacen envíos de productos?"
           answer="Hay descuentos y bonificaciones comprando por cantidad y productos especificos, Consultar.
-          Además hacemos envios tanto en Buenos Aires, como al interiór, todo el país con Mercado Libre (Visitá nuestra tienda.)"
+          Además hacemos envios tanto en Buenos Aires, como al interiór, todo el país con, Mercado Libre (Visita nuestra tienda.)"
           activeAccordion={activeAccordion}
           toggleAccordion={toggleAccordion}
         />
