@@ -9,7 +9,7 @@ const WhatsappIcon = () => {
   
     <div className="fixed bottom-4 right-4 z-50">
 
-      <Link href="https://api.whatsapp.com/send?phone=123345" className="btn-wsp">
+      <Link href="https://api.whatsapp.com/send?phone=1167813287" className="btn-wsp">
         <i className="fab fa-whatsapp text-4xl text-white"></i> {/* Agrega el icono de WhatsApp */}
       </Link>
     </div>
