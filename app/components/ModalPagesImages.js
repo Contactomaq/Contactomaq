@@ -34,7 +34,7 @@ const Modal = ({ isOpen, onClose }) => {
         </div>
         <div className="mt-6 flex justify-end">
         <Link
-  href="https://www.mercadolibre.com.ar/publicaciones/listado?filters=OMNI_ACTIVE|OMNI_INACTIVE|CHANNEL_NO_PROXIMITY_AND_NO_MP_MERCHANTS&page=1&sort=DEFAULT"
+  href="https://listado.mercadolibre.com.ar/_CustId_1164776174"
   target="_blank"
   rel="noopener noreferrer"
   className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded"
