@@ -31,29 +31,34 @@ const About = () => {
         <div className="container mx-auto px-4 py-8 sm:py-16">
           <div className="flex flex-col items-center justify-center space-y-8">
             <div className="bg-black rounded-full p-4 shadow-lg">
-            <h1 className="text-3xl md:text-5xl font-extrabold text-white dark:text-white text-center md:text-left">
+            <h1 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center">
   Sobre Nosotros
 </h1>
 
             </div>
-            <div className="">
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white leading-relaxed mb-8">
-                {paragraph}
-              </p>
-            </div>
+            <div className="mx-auto max-w-lg">
+  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white dark:text-white leading-relaxed mb-8">
+    {paragraph}
+  </p>
+</div>
           </div>
         </div>
       </div>
       <br />
       <div className="bg-black rounded-full p-4 shadow-lg">
-      <h3 className="text-3xl md:text-5xl font-extrabold text-white dark:text-white text-center md:text-left">Preguntas frecuentes</h3>
+      <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center">Preguntas frecuentes</h3>
+
+
       </div>
+      <br/>
       <div className="container mx-auto px-4">
-        <Accordion />
-      </div>
-      <br />
-      <h3 className="text-center">Opiniones</h3>
-      <Opiniones />
+  <Accordion />
+</div>
+<div className="text-center mt-8">
+  <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white">Opiniones</h3>
+  <Opiniones />
+</div>
+
     </>
   );
 };

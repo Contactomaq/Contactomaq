@@ -2,50 +2,23 @@ import React from "react";
 import "./globals.css";
 import WhatsappIcon from "./components/WhatsappIcon";
 import Image from "next/image";
+import ModalImages from "./components/ModalPagesImages";
+import HeroSection from "./components/HeroSection";
 
 
 
 export default function Home  ()  {
+
   return (
-
-    
-
-
 <>
-<div><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/></div>
-
-<div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/jardin.png')" }}>
-  <div className="absolute inset-0 bg-black opacity-50"></div> {/* Fondo oscuro */}
-  <div className="max-w-4xl mx-auto text-center relative z-10" style={{ top: "50%", transform: "translateY(-60%)" }}> {/* Ajuste de posición vertical */}
-    <div className="bg-black rounded-full p-4">
-    <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold bg-black text-white">
-  Servicio Técnico
-</h1>
-
-
-    </div>
-
-    <div className="mt-6 md:mt-10"> {/* Ajuste de margen superior */}
-      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-yellow-500 mb-4 md:mb-8 shadow-text-glow">
-        Tecnico Oficial
-        Venta, repuestos e insumos para motoimplementos de bosque y jardín!
-      </h2>
-    </div>
-
-  </div>
-</div>
-
+<HeroSection/>
 
 <WhatsappIcon />
 
 
-
-
-
-
-
-
-
+<div className="flex justify-center bg-black">
+  <ModalImages />
+</div>
 
 
 <div className="bg-gray-300">
