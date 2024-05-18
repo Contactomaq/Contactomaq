@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const Accordion = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -28,8 +29,12 @@ const Accordion = () => {
         <AccordionItem
           index={3}
           question="Hay descuentos, bonificaciones? Hacen envíos de productos?"
-          answer="Hay descuentos y bonificaciones comprando por cantidad y productos especificos, Consultar.
-          Además hacemos envios tanto en Buenos Aires, como al interiór, todo el país con, Mercado Libre (Visita nuestra tienda.)"
+          answer={
+            <>
+              Hay descuentos y bonificaciones comprando por cantidad y productos específicos. Consultar. Además, hacemos envíos tanto en Buenos Aires como al interior, a todo el país con Mercado Libre. Visita nuestra tienda.{' '}
+              <Link href="https://listado.mercadolibre.com.ar/_CustId_1164776174" target="_blank" className='text-blue-500 hover:text-blue-700'>CLICK AQUÍ</Link>.
+            </>
+          }
           activeAccordion={activeAccordion}
           toggleAccordion={toggleAccordion}
         />
