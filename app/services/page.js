@@ -78,7 +78,7 @@ const Services = () => {
         </p>
         <Link href="https://api.whatsapp.com/send?phone=1167813287" target="_blank" className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Acceder a un turno</Link>
         <p className="mt-6 text-xs leading-5 text-gray-600">En caso de SÍ querer reparar la maquina una vez presupuestada, se descontará del mismo arreglo.</p>
-        <p className="mt-6 text-xs leading-5 text-gray-700">En caso de NO aceptar el presupuesto el mismo será cobrado.</p>
+        <p className="mt-6 text-xs leading-5 text-gray-700">En caso de NO aceptar el presupuesto el mismo será cobrado un total de $3000.</p>
       </div>
     </div>
   </div>
