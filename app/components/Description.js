@@ -5,9 +5,7 @@ import Image from "next/image";
 const Description = ({ activeImage, clickNext, clickPrev, images }) => {
   return (
     <div className="grid place-items-start w-full bg-[#e7dfd9] relative md:rounded-tr-3xl md:rounded-br-3xl">
-    <div className="uppercase text-sm absolute right-4 top-2 underline-offset-4 underline" style={{backgroundColor: 'black', color: 'white', borderRadius: '10px', padding: '10px 10px'}}>
-    productos
-</div>
+    
 
 
 
@@ -43,9 +41,7 @@ const Description = ({ activeImage, clickNext, clickPrev, images }) => {
             </div>
           </motion.div>
 
-          <button className="bg-[#ecae7e] text-white uppercase px-4 py-2 rounded-md my-10">
-           LO QUIERO!
-          </button>
+          
           <div className="absolute md:bottom-1 bottom-10 right-10 md:right-0 w-full flex justify-center items-center">
             <div
               className="absolute bottom-2 right-10 cursor-pointer"

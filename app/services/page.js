@@ -1,9 +1,9 @@
 "use client"
 import React from "react";
-import Slider from "../components/Slider";
 import Listado from "../listado/page";
 import Link from "next/link";
 import Image from "next/image";
+import Slider from "../components/Slider";
 
 const Services = () => {
  
