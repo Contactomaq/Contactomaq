@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import SliderNuevo from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image'; // Importar Image desde Next.js
 
 import '../globals.css'; // Cambiado el nombre del archivo CSS
 import { dataDigitalBestSeller } from '../data';
-
 
 function MiComponente() {
   const [defaultImage, setDefaultImage] = useState({});
@@ -48,7 +48,6 @@ function MiComponente() {
     setDefaultImage((prev) => ({
       ...prev,
       [data.target.alt]: data.target.alt,
-      
     }));
   };
 
@@ -58,7 +57,7 @@ function MiComponente() {
         {dataDigitalBestSeller.map((item) => (
           <div className="card" key={item.id}>
             <div className="card-top">
-              <img
+              <Image
                 src={
                   defaultImage[item.title] === item.title
                     ? defaultImage.linkDefault
@@ -66,7 +65,9 @@ function MiComponente() {
                 }
                 alt={item.title}
                 onError={handleErrorImage}
-                className="w-full h-64 object-cover rounded-t-lg"
+                width={300} // Define el ancho deseado de la imagen
+                height={300} // Define la altura deseada de la imagen
+                className="object-cover rounded-t-lg"
               />
               <h1 className="text-lg font-semibold p-4">{item.title}</h1>
             </div>
@@ -82,3 +83,4 @@ function MiComponente() {
 }
 
 export default MiComponente;
+``

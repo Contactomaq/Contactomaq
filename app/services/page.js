@@ -15,10 +15,14 @@ const Services = () => {
 <div>
 
 <h1 className="text-3xl font-bold text-center py-8 bg-gradient-to-r from-[#c8bdba] to-[#a49d9b] text-transparent bg-clip-text">Productos y Servicios</h1>
-      <main className="bg-gradient-animation w-full min-h-screen mx-auto grid place-items-center">
-        <MiComponente/>
-       
-      </main>
+<main className="bg-gradient-animation w-full min-h-screen mx-auto grid place-items-center">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="w-full">
+      <MiComponente />
+    </div>
+  </div>
+</main>
+
       
       <div className="flex justify-center mt-8">
  
