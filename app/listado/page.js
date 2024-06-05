@@ -3,8 +3,7 @@ import Card from "../components/Card";
 
 function Listado() {
   const vehicleList = vehicles.map((v, index) => {
-    // Agregar un atributo "key" único usando el índice del mapeo
-    return <Card key={index} title={v.name} description={v.description} index={index} />;
+    return <Card key={index} title={v.name} description={v.description} link={v.link} />;
   });
 
   return (
@@ -15,7 +14,7 @@ function Listado() {
         color: '#2c3e50', // Color oscuro
         textShadow: '0 0 5px rgba(255,255,255,0.5)'
       }}>
-        Listado de máquinas
+        Repuestos para cada una de las maquinas
       </h2>
       <div className="container">{vehicleList}</div>
     </div>
