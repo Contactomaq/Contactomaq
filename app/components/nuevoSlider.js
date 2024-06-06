@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import SliderNuevo from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -54,9 +55,9 @@ function MiComponente() {
   return (
     <div className="container mx-auto">
       <SliderNuevo {...settings} className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-4">
-        {dataDigitalBestSeller.map((item) => (
+      {dataDigitalBestSeller.map((item, index) => (
        
-       <div className="card w-full mx-auto">
+       <div key={index} className="card w-full mx-auto">
        <div className="card-image">
          <Image
            src={
