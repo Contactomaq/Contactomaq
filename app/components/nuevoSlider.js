@@ -54,7 +54,7 @@ function MiComponente() {
 
   return (
     <div className="container mx-auto">
-      <SliderNuevo {...settings} className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-4">
+      <SliderNuevo {...settings} className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1">
       {dataDigitalBestSeller.map((item, index) => (
        
        <div key={index} className="card w-full mx-auto">
