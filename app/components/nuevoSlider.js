@@ -55,27 +55,33 @@ function MiComponente() {
     <div className="container mx-auto">
       <SliderNuevo {...settings} className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-4">
         {dataDigitalBestSeller.map((item) => (
-          <div className="card" key={item.id}>
-            <div className="card-top">
-              <Image
-                src={
-                  defaultImage[item.title] === item.title
-                    ? defaultImage.linkDefault
-                    : item.linkImg
-                }
-                alt={item.title}
-                onError={handleErrorImage}
-                width={300} // Define el ancho deseado de la imagen
-                height={300} // Define la altura deseada de la imagen
-                className="object-cover rounded-t-lg"
-              />
-              <h1 className="text-lg font-semibold p-4">{item.title}</h1>
-            </div>
-            <div className="card-bottom bg-gray-800 text-white py-4 px-6">
-              <h3 className="text-lg">{item.price}</h3>
-              <span className="category text-sm">{item.category}</span>
-            </div>
-          </div>
+       
+       <div className="card w-full mx-auto">
+       <div className="card-image">
+         <Image
+           src={
+             defaultImage[item.title] === item.title
+               ? defaultImage.linkDefault
+               : item.linkImg
+           }
+           alt={item.title}
+           onError={handleErrorImage}
+           width={300}
+           height={300}
+           className="object-cover w-full h-full"
+         />
+       </div>
+       <div className="card-content p-4">
+         <h1 className="title text-lg font-semibold">{item.title}</h1>
+         <div className="card-details mt-2">
+           <h3 className="price text-base font-bold">{item.price}</h3>
+           <span className="category text-sm">{item.category}</span>
+         </div>
+       </div>
+     </div>
+     
+      
+       
         ))}
       </SliderNuevo>
     </div>
@@ -83,4 +89,4 @@ function MiComponente() {
 }
 
 export default MiComponente;
-``
+

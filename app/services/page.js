@@ -3,7 +3,6 @@ import React from "react";
 import Listado from "../listado/page";
 import Link from "next/link";
 import Image from "next/image";
-import Slider from "../components/Slider";
 import MiComponente from "../components/nuevoSlider";
 
 const Services = () => {
