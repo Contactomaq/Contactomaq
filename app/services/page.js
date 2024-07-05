@@ -7,22 +7,24 @@ import Image from "next/image";
 
 const Services = () => {
  
-
+  
   
   return (
 <div>
-
-<h1 className="text-3xl font-bold text-center py-8 bg-gradient-to-r from-[#c8bdba] to-[#a49d9b] text-transparent bg-clip-text">Productos y Servicios</h1>
-<main className="bg-gradient-animation w-full min-h-screen mx-auto grid place-items-center">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-  <h1 className="contactomaq">Contactomaq</h1>
-
-  </div>
+<main className="bg-gradient-to-br from-red-600 to-indigo-600 w-full min-h-screen mx-auto flex flex-col items-center justify-center">
+  <h1 className="text-5xl font-bold text-center py-8 bg-gradient-to-r from-[#c8bdba] to-[#a49d9b] text-transparent bg-clip-text mb-8">Productos y Servicios</h1>
+  <h2 className="text-4xl font-bold text-black mb-8">Contactomaq</h2>
+  <ul className="text-white text-xl mb-4">
+    <li className="mb-2 hover:text-black">Repuestos para maquinaria agricola</li>
+    <li className="mb-2 hover:text-black">Services y actualizaciones</li>
+    <li className="mb-2 hover:text-black">Presupuestos y Reparaciones al instante</li>
+  </ul>
 </main>
+
 
       
       <div className="flex justify-center mt-8">
- 
+      
     <Listado />
   
 </div>
@@ -87,7 +89,6 @@ const Services = () => {
 </div>
 </div>
 </div>
-
 
 
 
