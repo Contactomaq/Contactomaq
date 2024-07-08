@@ -13,12 +13,42 @@ const Services = () => {
 <div>
 <main className="bg-gradient-to-br from-red-600 to-indigo-600 w-full min-h-screen mx-auto flex flex-col items-center justify-center">
   <h1 className="text-5xl font-bold text-center py-8 bg-gradient-to-r from-[#c8bdba] to-[#a49d9b] text-transparent bg-clip-text mb-8">Productos y Servicios</h1>
-  <h2 className="text-4xl font-bold text-black mb-8">Contactomaq</h2>
-  <ul className="text-white text-xl mb-4">
-    <li className="mb-2 hover:text-black">Repuestos para maquinaria agricola</li>
-    <li className="mb-2 hover:text-black">Services y actualizaciones</li>
-    <li className="mb-2 hover:text-black">Presupuestos y Reparaciones al instante</li>
-  </ul>
+  <h2 className="text-5xl font-bold text-black mb-8 relative overflow-hidden cursor-pointer">
+    <span className="relative z-10">
+        Contactomaq
+    </span>
+    <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-gray-400 to-gray-200 opacity-0 hover:opacity-100"></span>
+</h2>
+
+
+
+
+  <div className="flex flex-col justify-center items-center gap-4">
+    <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
+        <span className="text-white text-2xl mr-2">•</span>
+        <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center">
+            Repuestos para maquinaria agrícola
+        </h3>
+    </div>
+
+    <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
+        <span className="text-white text-2xl mr-2">•</span>
+        <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center">
+            Servicios y actualizaciones
+        </h3>
+    </div>
+
+    <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
+        <span className="text-white text-2xl mr-2">•</span>
+        <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center font-nunito">
+            Presupuestos y reparaciones al instante
+        </h3>
+    </div>
+</div>
+
+
+  
+
 </main>
 
 
