@@ -9,8 +9,8 @@ const About = () => {
 
   const paragraphs = useMemo(() => [
     "Horarios de atención de lunes a viernes de 09:00 Hs a 18:00 Hs",
-    "Contamos con varios metodos de pago",
-    "Donde? En José Manuel Estrada 1723, B1742 Paso del Rey, Provincia de Buenos Aires"
+    "Contamos con varios metodos de pago en nuestro local",
+    "José Manuel Estrada 1723, B1742 Paso del Rey, Provincia de Buenos Aires"
   ], []);
 
   useEffect(() => {
