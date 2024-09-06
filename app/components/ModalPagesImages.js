@@ -1,5 +1,5 @@
 "use client"
-
+import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -64,8 +64,15 @@ const ModalImages = () => {
     <div className="flex justify-center items-center h-screen">
       <button
   onClick={openModal}
-  className="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-lg text-lg"
+  className="inline-flex items-center px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition-colors duration-300"
 >
+<Image
+          src="/meli.png" // Reemplaza con la ruta a tu imagen
+          alt="Mercado Libre"
+          width={35} // Ajusta el ancho según sea necesario
+          height={35} // Ajusta la altura según sea necesario
+          className="mr-2"
+        />
   Todos los productos en ML
 </button>
 
