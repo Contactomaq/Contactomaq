@@ -1,3 +1,4 @@
+"use client"
 import vehicles from "../Data/vehicles"; // Asegúrate de que la ruta sea correcta
 import Card from "../components/Card";
 
