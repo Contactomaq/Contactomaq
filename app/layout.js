@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="in">
 
 
-<link rel="icon" href="/Logo.png"/>
+<link rel="icon" href="/logo.png"/>
 
 
 {/* Vincula los iconos de diferentes tamaños */}

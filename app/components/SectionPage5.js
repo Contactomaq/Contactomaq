@@ -5,7 +5,8 @@ const Section5 = () => {
     return(
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Especificaciones de nuestro producto destacado</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Especificaciones de nuestros productos destacados</h2>
+          <p className="mt-5 text-gray-800">Resorte y Tapa Desmalezadoras Black & Decker.</p>
           <p className="mt-4 text-gray-500">Cabezal Carretel Desmalezadora Chinas.
 -Nuestros otros modelos son compatibles con: Black and Decker, Echo, Gamma, Husqvarna, Lusqtoff, MTD, Niwa, Sensei, Shimura, Stihl, Shikawa, Toyama, Kommberg, Upper, Nebraska, Dowen Paggio, De Walt, Makita, Bosch, Skil Saw, Stanley, Workpro</p>
 
@@ -37,10 +38,10 @@ const Section5 = () => {
           </dl>
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-          <Image src="/cabezal1.png" width={350} height={350} alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." className="rounded-lg bg-gray-100"/>
+          <Image src="/desmalezadora/cabezalchinas1.png" width={350} height={350} alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." className="rounded-lg bg-gray-100"/>
           <Image src="/desmalezadora/centrotapa.png" width={350} height={350} alt="Top down view of walnut card tray with embedded magnets and card groove." className="rounded-lg bg-gray-100"/>
           <Image src="/desmalezadora/resortesdelablack.png" width={350} height={350} alt="Walnut card tray filled with cards and card angled in dedicated groove." className="rounded-lg bg-gray-100"/>
-          <Image src="/cabezal2.png" width={350} height={350} alt="Side of walnut card tray with card groove and recessed card area." className="rounded-lg bg-gray-100"/>
+          <Image src="/desmalezadora/cabezalchinas2.png" width={350} height={350} alt="Side of walnut card tray with card groove and recessed card area." className="rounded-lg bg-gray-100"/>
         </div>
       </div>
     )
