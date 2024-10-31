@@ -65,7 +65,7 @@ const productsData = {
         ]
     },
     {
-        id: "",
+        id: "70",
         price: "30.000",
         name: "Arnes Profesional Para Desmalezadora - Gamma",
         images: [

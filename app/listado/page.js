@@ -1,15 +1,15 @@
 import vehicles from "../Data/vehicles"; // Asegúrate de que la ruta sea correcta
 import Card from "../components/Card";
 
-function Listado({ onProductSelect }) {
+export default function Listado({ onProductSelect }) {
   const vehicleList = vehicles.map((v) => {
     return (
       <Card 
-        key={v.id} // Usa v.id para asegurar una clave única
+        key={v.id}
         title={v.name} 
         description={v.description} 
-        index={v.id} // Pasa el id para la navegación
-        onClick={() => onProductSelect(v)} // Llama a onProductSelect con el vehículo
+        index={v.id}
+        onClick={() => onProductSelect(v)} 
       />
     );
   });
@@ -28,5 +28,3 @@ function Listado({ onProductSelect }) {
     </div>
   );
 }
-
-export default Listado;
