@@ -43,17 +43,7 @@
     /* border: 2px solid #444; */
   }
 
-  .VehicleView {
-    max-width: 90%;
-    margin: auto;
-    text-align: center;
-  }
-  
-  .VehicleView img {
-    display: block;
-    max-width: 100%;
-  }
-
+ 
   .App h1 {
     text-align: center;
   }

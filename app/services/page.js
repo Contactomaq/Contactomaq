@@ -1,62 +1,79 @@
-
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Listado from "../listado/page";
-import Link from "next/link";
 import Image from "next/image";
-
-
+import Link from "next/link";
+import ProductCard from "../components/ProductCard";
+import productsData from "../Data/productsData";
 const Services = () => {
- 
-  
-  
+  const [selectedProduct, setSelectedProduct] = useState(null);
+const [productList, setProductList] = useState([]);
+const [selectedCategoryProducts, setSelectedCategoryProducts] = useState([]);
+
+const handleProductSelect = (product) => {
+  setSelectedProduct(product);
+  const products = productsData[product.name] || [];
+  setProductList(products);
+  setSelectedCategoryProducts(products); // Agregar esta línea
+};
+
+
   return (
-<div>
-<main className="bg-gradient-to-br from-red-800 to-orange-800 w-full min-h-screen mx-auto flex flex-col items-center justify-center">
-  <h1 className="text-5xl font-bold text-center py-8 bg-gradient-to-r from-[#c8bdba] to-[#a49d9b] text-transparent bg-clip-text mb-8">Productos y Servicios</h1>
-  
+    <div>
+      <main className="bg-gradient-to-br from-red-800 to-orange-800 w-full min-h-screen mx-auto flex flex-col items-center justify-center">
+        <h1 className="text-5xl font-bold text-center py-8 bg-gradient-to-r from-[#c8bdba] to-[#a49d9b] text-transparent bg-clip-text mb-8">
+          Productos y Servicios
+        </h1>
+        <div className="flex flex-col justify-center items-center gap-4">
+          <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
+            <span className="text-white text-2xl mr-2">•</span>
+            <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center">
+              Repuestos para maquinaria agrícola
+            </h3>
+          </div>
 
+          <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
+            <span className="text-white text-2xl mr-2">•</span>
+            <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center">
+              Services y Mantenimiento
+            </h3>
+          </div>
 
+          <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
+            <span className="text-white text-2xl mr-2">•</span>
+            <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center font-nunito">
+              Presupuestos y reparaciones al instante
+            </h3>
+          </div>
+        </div>
+      </main>
 
-
-  <div className="flex flex-col justify-center items-center gap-4">
-    <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
-        <span className="text-white text-2xl mr-2">•</span>
-        <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center">
-            Repuestos para maquinaria agrícola
-        </h3>
-    </div>
-
-    <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
-        <span className="text-white text-2xl mr-2">•</span>
-        <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center">
-            Services y Mantenimiento
-        </h3>
-    </div>
-
-    <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
-        <span className="text-white text-2xl mr-2">•</span>
-        <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center font-nunito">
-            Presupuestos y reparaciones al instante
-        </h3>
-    </div>
-</div>
-
-
-  
-
-</main>
-
-
-      
       <div className="flex justify-center mt-8">
+        <Listado onProductSelect={handleProductSelect} />
+      </div>
+
+      <div>
+  {selectedProduct && (
+    <div className="bg-white p-4 rounded shadow-md mt-4">
       
-    <Listado />
   
+         
+          <h3 className="text-2xl font-bold text-center">{selectedProduct.name}</h3>
+          <p className="text-center">{selectedProduct.description}</p>
+     
+
+      {/* Mostrar las tarjetas de productos aquí */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        {selectedCategoryProducts.map((product, index) => (
+          <ProductCard key={index} product={product} />
+        ))}
+      </div>
+    </div>
+  )}
 </div>
 
-<br/>
-
-<div className="bg-white py-24 sm:py-32">
+      <br />
+      <div className="bg-white py-24 sm:py-32">
 <div className="mx-auto max-w-7xl px-6 lg:px-8">
 <div className="mx-auto max-w-2xl sm:text-center">
   <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">No dudes en traer tu maquina para arreglar!</h2>
@@ -140,8 +157,4 @@ const Services = () => {
 };
 
 export default Services;
-
-
-
-
 

@@ -28,14 +28,11 @@ const toggleNavbar = () => {
     <Link href="/" className="text-white hover:bg-white hover:text-black rounded-lg p-2 font-bold text-xl">
   Inicio
 </Link>
-
-
-<Link href="/nosotros" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
-  Nosotros
-</Link>
-
 <Link href="/services" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
   Productos
+</Link>
+<Link href="/nosotros" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
+  Nosotros
 </Link>
 <Link href="/contacto" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
   Contacto
