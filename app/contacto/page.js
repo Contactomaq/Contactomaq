@@ -9,7 +9,7 @@ const Contacto = () => {
           className="mx-auto"
           height={150}
           width={170}
-          src="/logo.png"
+          src="/Logo.png"
           alt="Your Company"
         />
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight">
