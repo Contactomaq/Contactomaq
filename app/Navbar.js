@@ -18,7 +18,13 @@ const toggleNavbar = () => {
     <div className="flex items-center">
     <div className="flex-shrink-0">
          <Link href="/">
-        <Image src="/logo.png" alt="logo" height={120} width={140}/>
+         <Image
+                    src="/logo.png"
+                    alt="logo"
+                    height={120}
+                    width={140}
+                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 140px"
+                  />
         </Link>
     </div>
     </div>
