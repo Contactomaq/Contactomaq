@@ -418,7 +418,7 @@ const productsData = {
           price: "12.500",
           name: "Caño Extensor, plástico sopladoras",
           images: [
-            "/hidrolavadoras/cañosopladora1.png",
+            "/hidrolavadoras/tubosoplador.png",
           ]
       },
 
@@ -427,8 +427,8 @@ const productsData = {
         price: "17.000",
         name: "Caño Extensor movil, plástico sopladoras",
         images: [
-          "/hidrolavadoras/cañosopladora2.png",
-          "/hidrolavadoras/cañosopladora3.png"
+          "/hidrolavadoras/caniosopladora2.png",
+          "/hidrolavadoras/caniosopladora3.png"
         ]
     },
     {
