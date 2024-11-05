@@ -11,8 +11,10 @@
     }
   }
   
+
+  
   .animate-fade-in {
-    animation: fade-in 2.5s ease-out; /* Puedes ajustar la duración y el tipo de animación según tus preferencias */
+    animation: fade-in 2s ease-out; /* Puedes ajustar la duración y el tipo de animación según tus preferencias */
   }
 
   @keyframes gradientAnimation {
