@@ -16,41 +16,41 @@ const handleProductSelect = (product) => {
   setProductList(products);
   setSelectedCategoryProducts(products); // Agregar esta línea
 };
+// Función para manejar el desplazamiento suave hacia la sección productos
+const scrollToProductos = (event) => {
+  event.preventDefault();
+  const target = document.getElementById("productos");
+  
+  window.scrollTo({
+    top: target.offsetTop, // Esto lleva la página hasta el top del elemento
+    behavior: "smooth", // Hacemos que el desplazamiento sea suave
+  });
+};
 
+return (
+  <div>
+    <main className="bg-gradient-to-br from-red-800 to-orange-800 w-full min-h-screen mx-auto flex flex-col items-center justify-center py-16 relative">
+      
+      {/* Título "Productos y Servicios" */}
+      <h1 className="text-5xl font-bold text-center py-8 bg-gradient-to-r from-[#c8bdba] to-[#a49d9b] text-transparent bg-clip-text mb-32 z-10 relative">
+        Productos y Servicios
+      </h1>
 
-  return (
-    <div>
-      <main className="bg-gradient-to-br from-red-800 to-orange-800 w-full min-h-screen mx-auto flex flex-col items-center justify-center">
-        <h1 className="text-5xl font-bold text-center py-8 bg-gradient-to-r from-[#c8bdba] to-[#a49d9b] text-transparent bg-clip-text mb-8">
-          Productos y Servicios
-        </h1>
-        <div className="flex flex-col justify-center items-center gap-4">
-          <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
-            <span className="text-white text-2xl mr-2">•</span>
-            <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center">
-              Repuestos para maquinaria agrícola
-            </h3>
-          </div>
-
-          <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
-            <span className="text-white text-2xl mr-2">•</span>
-            <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center">
-              Services y Mantenimiento
-            </h3>
-          </div>
-
-          <div className="bg-black p-3 rounded-full p-4 shadow-lg flex items-center">
-            <span className="text-white text-2xl mr-2">•</span>
-            <h3 className="text-lg md:text-xl font-semibold text-white dark:text-white text-center font-nunito">
-              Presupuestos y reparaciones al instante
-            </h3>
-          </div>
-        </div>
-      </main>
-
-      <div className="flex justify-center mt-8">
-        <Listado onProductSelect={handleProductSelect} />
+      {/* Flecha animada que desplaza hacia abajo */}
+      <div className="absolute mt-20 animate-bounce">
+        {/* Enlace para desplazar hacia la sección productos */}
+        <button onClick={scrollToProductos} className="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+          </svg>
+        </button>
       </div>
+    </main>
+
+    {/* Sección donde se encuentran los productos */}
+    <div id="productos" className="flex justify-center mt-16 sm:mt-12 md:mt-8">
+      <Listado onProductSelect={handleProductSelect} />
+    </div>
 
       <div>
   {selectedProduct && (
@@ -119,7 +119,7 @@ const handleProductSelect = (product) => {
       <div className="mx-auto max-w-xs px-8">
         <p className="text-base font-semibold text-gray-600">Valor del presupuesto</p>
         <p className="mt-6 flex items-baseline justify-center gap-x-2">
-          <span className="text-5xl font-bold tracking-tight text-gray-900">$3000</span>
+          <span className="text-5xl font-bold tracking-tight text-gray-900">$5000</span>
           <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">ARS</span>
         </p>
         <Link href="https://api.whatsapp.com/send?phone=1167813287" target="_blank" className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Acceder a un turno</Link>

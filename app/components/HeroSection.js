@@ -35,10 +35,15 @@ const HeroSection = () => {
             <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-indigo-600 mb-6">
               Técnico Oficial | Venta, repuestos e insumos para motoimplementos de bosque y jardín
             </h2>
-            <p className="text-gray-700 md:text-lg lg:text-xl">
+            <p className="text-gray-700 md:text-lg lg:text-xl mb-4">
               Ofrecemos soluciones completas para el mantenimiento de tus equipos de jardinería y bosque. 
               Nuestro equipo está capacitado para brindarte el mejor servicio y los productos de mayor calidad.
             </p>
+
+            {/* Número de teléfono */}
+            <div className="mt-6 p-2 bg-red-600 text-white text-lg font-semibold rounded-lg">
+              <p>Tel: <a href="https://api.whatsapp.com/send?phone=1167813287" className="underline">1167813287</a></p>
+            </div>
           </div>
         </div>
       </div>
