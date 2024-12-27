@@ -17,13 +17,15 @@ const Contacto = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Mostrar el toast con la notificación
-    setToastVisible(true);
-
-    // Esconde el toast después de 3 segundos
+    // Mostrar el toast con un retraso de 2 segundos
     setTimeout(() => {
-      setToastVisible(false);
-    }, 3000);
+      setToastVisible(true);
+
+      // Esconde el toast después de 3 segundos
+      setTimeout(() => {
+        setToastVisible(false);
+      }, 3000);
+    }, 2000);
 
     // Reseteamos los campos después de enviar el mensaje (opcional)
     setFormData({

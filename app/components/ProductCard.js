@@ -67,7 +67,7 @@ const ProductCard = ({ product }) => {
               <div className="flex justify-center items-center relative">
                 {/* Logo de la empresa */}
                 <Image
-                  src="/logo.png" // Ruta al logo de la empresa
+                  src="/Logo.png" // Ruta al logo de la empresa
                   alt="Logo de la empresa"
                   width={100} // Ajusta el tamaño del logo
                   height={100} // Ajusta el tamaño del logo
