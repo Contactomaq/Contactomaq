@@ -41,7 +41,7 @@ const ProductCard = ({ product }) => {
 
       <div className="relative pt-4 px-4 flex items-center justify-center">
         <div className="relative w-48 h-48 overflow-hidden">
-          {/* Verificamos si hay imágenes y cargamos la imagen actual */}
+          {/* Si hay imágenes, cargamos la imagen actual */}
           {images.length > 0 && !imageError && (
             <Image
               className="object-contain"
@@ -54,17 +54,27 @@ const ProductCard = ({ product }) => {
             />
           )}
 
-          {/* Mostrar un fallback o spinner si hay un error en la carga */}
+          {/* Mostrar un fallback o mensaje si hay un error en la carga */}
           {imageError && (
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 z-10 text-white">
               <p>Error al cargar la imagen</p>
             </div>
           )}
 
-          {/* Loader mientras se carga la imagen */}
+          {/* Aquí cambiamos el cuadrado opaco por el logo y el loader */}
           {loading && !imageError && (
-            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 z-10">
-              <div className="animate-spin rounded-full h-8 w-8 border-t-4 border-white border-solid"></div>
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-100 z-10">
+              <div className="flex justify-center items-center relative">
+                {/* Logo de la empresa */}
+                <Image
+                  src="/logo.png" // Ruta al logo de la empresa
+                  alt="Logo de la empresa"
+                  width={100} // Ajusta el tamaño del logo
+                  height={100} // Ajusta el tamaño del logo
+                />
+                {/* Loader giratorio encima del logo */}
+                <div className="absolute animate-spin rounded-full h-8 w-8 border-t-4 border-white border-solid"></div>
+              </div>
             </div>
           )}
         </div>
